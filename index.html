@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Centered Image</title>
+    <style>
+        /* Basic reset for body margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: #f4f4f4; /* A light background color for better visibility */
+        }
+
+        img.centered-responsive {
+            /* Set the max-width to the specified size */
+            max-width: 1024px;
+            /* Set the max-height to ensure it doesn't go over the specified size in either dimension */
+            max-height: 1024px;
+            /* This ensures the image is responsive */
+            width: 100%;
+            height: auto;
+            /* Center the image */
+            display: block;
+            margin: 0 auto;
+        }
+        body {
+            background-color: #000000;
+        }   
+    </style>
+</head>
+<body>
+    <img src="eauparfums.png" alt="Description of Image" class="centered-responsive">
+</body>
+</html>
